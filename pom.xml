@@ -8,18 +8,26 @@
     <artifactId>data-lineage</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <name>Data Lineage</name>
+
     <modules>
         <module>lineage-analysis</module>
+        <module>hive-parse</module>
     </modules>
 
+    <properties>
+        <hive-exec.version>3.1.0</hive-exec.version>
+    </properties>
 
-
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.hive</groupId>
-            <artifactId>hive-exec</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.hive</groupId>
+                <artifactId>hive-exec</artifactId>
+                <version>${hive-exec.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
