@@ -12,8 +12,7 @@
     <name>Data Lineage</name>
 
     <modules>
-        <module>lineage-analysis</module>
-        <module>hive-parse</module>
+        <module>parse</module>
     </modules>
 
     <properties>
