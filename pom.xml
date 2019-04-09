@@ -12,7 +12,7 @@
     <name>Data Lineage</name>
 
     <modules>
-        <module>parse</module>
+        <module>parser</module>
     </modules>
 
     <properties>

@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="parse" />
         <module name="hive-parse" />
+        <module name="parser" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hive-parse" target="1.5" />
       <module name="lineage-an" target="1.5" />
+      <module name="parse" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
